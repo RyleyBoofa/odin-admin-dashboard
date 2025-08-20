@@ -6,6 +6,13 @@
         <title>Dashboard</title>
         <link rel="stylesheet" href="src/styles.css" />
         <script src="src/script.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <div class="page-container">
@@ -21,23 +28,59 @@
                 </div>
                 <div class="main-links-container">
                     <ul class="main-links">
-                        <li class="sidebar-link"><a href="">Home</a></li>
-                        <li class="sidebar-link"><a href="">Profile</a></li>
-                        <li class="sidebar-link"><a href="">Messages</a></li>
-                        <li class="sidebar-link"><a href="">History</a></li>
-                        <li class="sidebar-link"><a href="">Tasks</a></li>
-                        <li class="sidebar-link"><a href="">Communities</a></li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-house"></i>Home</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-user"></i>Profile</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <i class="fa-solid fa-message"></i><a href="">Messages</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-list-check"></i>Tasks</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-people-group"></i>Communities</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="secondary-links-container">
                     <ul class="secondary-links">
-                        <li class="sidebar-link"><a href="">Settings</a></li>
-                        <li class="sidebar-link"><a href="">Support</a></li>
-                        <li class="sidebar-link"><a href="">Privacy</a></li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-circle-question"></i>Support</a>
+                        </li>
+                        <li class="sidebar-link">
+                            <a href=""><i class="fa-solid fa-shield-halved"></i>Privacy</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-            <header class="header-container"></header>
+            <header class="header-container">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" id="search" />
+                </div>
+                <div class="alerts-container">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="avatar-container">
+                    <div class="avatar-photo">
+                        <img
+                            src="./assets/img/spiderman-icon.jpeg"
+                            alt="User Profile Picture"
+                            width="50px"
+                        />
+                    </div>
+                    <div class="avatar-name">Peter Parker</div>
+                </div>
+            </header>
             <main class="content-container"></main>
         </div>
     </body>
