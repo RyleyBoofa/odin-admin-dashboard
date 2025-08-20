@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 *,
 *::before,
 *::after {
@@ -15,6 +17,12 @@ ul {
     list-style-type: none;
 }
 
+ul a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
 .page-container {
     width: 100vw;
     height: 100vh;
@@ -22,6 +30,8 @@ ul {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
+
+/* SIDEBAR */
 
 .sidebar-container {
     grid-row: 1 / 3;
@@ -70,10 +80,14 @@ ul {
     font-weight: bold;
 }
 
+/* HEADER */
+
 .header-container {
     background-color: white;
     grid-column: 2 / 3;
 }
+
+/* MAIN */
 
 .content-container {
     background-color: lightgrey;
