@@ -28,6 +28,18 @@ input {
     font: inherit;
 }
 
+button {
+    border: none;
+    background: none;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .page-container {
     width: 100vw;
     height: 100vh;
@@ -110,7 +122,7 @@ input {
 .search-container input {
     border: none;
     border-radius: 1rem;
-    background-color: lightgrey;;
+    background-color: lightgrey;
     width: 100%;
     padding: 0.5em 1em;
 }
@@ -131,8 +143,8 @@ input {
 }
 
 .avatar-container img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -141,9 +153,9 @@ input {
     font-weight: bold;
     grid-column: 1 / 5;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 1rem
+    gap: 1rem;
+    padding-left: 1rem;
 }
 
 .user-container img {
@@ -160,11 +172,10 @@ input {
     align-items: center;
 }
 
-.header-buttons-container input[type="button"] {
+.header-buttons-container button {
     font-weight: bold;
     background-color: royalblue;
     color: white;
-    border: none;
     border-radius: 1em;
     padding: 0.5em 2em;
 }
@@ -202,10 +213,49 @@ input {
 }
 
 .project-card {
-    padding: 2rem 3rem 4rem 1rem;
+    border-left: 0.5em solid yellow;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.project-info {
+    grid-column: 1 / 3;
+}
+
+.project-buttons {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .announcements-card,
 .trending-card {
     padding: 1rem;
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.trending:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.trending {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
 }

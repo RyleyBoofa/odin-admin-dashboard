@@ -68,7 +68,7 @@
                     <input type="search" name="search" id="search" />
                 </div>
                 <div class="alerts-container">
-                    <i class="fa-regular fa-bell"></i>
+                    <button><i class="fa-regular fa-bell"></i></button>
                 </div>
                 <div class="avatar-container">
                     <img
@@ -90,9 +90,9 @@
                     </div>
                 </div>
                 <div class="header-buttons-container">
-                    <input type="button" value="New" />
-                    <input type="button" value="Upload" />
-                    <input type="button" value="Share" />
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
                 </div>
             </header>
             <main class="content-container">
@@ -100,47 +100,90 @@
                     <h3>Your Projects</h3>
                     <div class="project-cards-container">
                         <div class="project-card card">
-                            <h4>Super Cool Project</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at
-                                egestas enim. In hac habitasse platea dictumst.
-                            </p>
+                            <div class="project-info">
+                                <h4>Super Cool Project</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    at egestas enim. In hac habitasse platea dictumst.
+                                </p>
+                            </div>
+                            <div class="project-buttons">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
                         </div>
                         <div class="project-card card">
-                            <h4>Less Cool Project</h4>
-                            <p>
-                                Integer non massa sit amet eros tempus ultrices. Morbi sed elit
-                                dictum, faucibus quam id, rutrum est.
-                            </p>
+                            <div class="project-info">
+                                <h4>Less Cool Project</h4>
+                                <p>
+                                    Integer non massa sit amet eros tempus ultrices. Morbi sed elit
+                                    dictum, faucibus quam id, rutrum est.
+                                </p>
+                            </div>
+                            <div class="project-buttons">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
                         </div>
                         <div class="project-card card">
-                            <h4>Impossible App</h4>
-                            <p>
-                                Curabitur nec rhoncus tortor, quis dictum neque. Etiam auctor neque
-                                consectetur quam elementum dignissim.
-                            </p>
+                            <div class="project-info">
+                                <h4>Impossible App</h4>
+                                <p>
+                                    Curabitur nec rhoncus tortor, quis dictum neque. Etiam auctor
+                                    neque consectetur quam elementum dignissim.
+                                </p>
+                            </div>
+                            <div class="project-buttons">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
                         </div>
                         <div class="project-card card">
-                            <h4>Easy Peasy App</h4>
-                            <p>
-                                Fusce convallis quis nibh ut pharetra. Nam ultrices ipsum non nisl
-                                finibus, sed ullamcorper nulla ullamcorper.
-                            </p>
+                            <div class="project-info">
+                                <h4>Easy Peasy App</h4>
+                                <p>
+                                    Fusce convallis quis nibh ut pharetra. Nam ultrices ipsum non
+                                    nisl finibus, sed ullamcorper nulla ullamcorper.
+                                </p>
+                            </div>
+                            <div class="project-buttons">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
                         </div>
                         <div class="project-card card">
-                            <h4>Ad Blocker</h4>
-                            <p>
-                                Sed eget arcu vitae purus tincidunt ultrices vitae at mi. Curabitur
-                                maximus turpis ut molestie tempus. Pellentesque habitant morbi
-                                tristique senectus et netus et malesuada fames ac turpis egestas.
-                            </p>
+                            <div class="project-info">
+                                <h4>Ad Blocker</h4>
+                                <p>
+                                    Sed eget arcu vitae purus tincidunt ultrices vitae at mi.
+                                    Curabitur maximus turpis ut molestie tempus. Pellentesque
+                                    habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis egestas.
+                                </p>
+                            </div>
+                            <div class="project-buttons">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
                         </div>
                         <div class="project-card card">
-                            <h4>Money Maker</h4>
-                            <p>
-                                Vestibulum hendrerit consectetur lacus. Mauris elit mauris,
-                                tincidunt sed lorem id, mollis condimentum dui.
-                            </p>
+                            <div class="project-info">
+                                <h4>Money Maker</h4>
+                                <p>
+                                    Vestibulum hendrerit consectetur lacus. Mauris elit mauris,
+                                    tincidunt sed lorem id, mollis condimentum dui.
+                                </p>
+                            </div>
+                            <div class="project-buttons">
+                                <button><i class="fa-regular fa-star"></i></button>
+                                <button><i class="fa-regular fa-eye"></i></button>
+                                <button><i class="fa-solid fa-code-fork"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,20 +217,48 @@
                     <h3>Trending</h3>
                     <div class="trending-card card">
                         <div class="trending">
-                            <h4>@antguy</h4>
-                            <p>Shrinking Project</p>
+                            <img
+                                src="./assets/img/antman-icon.jpg"
+                                alt="Antman Profile Photo"
+                                width="50px"
+                            />
+                            <div class="trending-user">
+                                <h4>@antguy</h4>
+                                <p>Shrinking Project</p>
+                            </div>
                         </div>
                         <div class="trending">
-                            <h4>@spideyboi</h4>
-                            <p>Super Cool Project</p>
+                            <img
+                                src="./assets/img/spiderman-icon.jpeg"
+                                alt="Spiderman Profile Photo"
+                                width="50px"
+                            />
+                            <div class="trending-user">
+                                <h4>@spideyboi</h4>
+                                <p>Super Cool Project</p>
+                            </div>
                         </div>
                         <div class="trending">
-                            <h4>@goldtitaniumalloyman</h4>
-                            <p>Hulk Buster Project</p>
+                            <img
+                                src="./assets/img/ironman-icon.jpg"
+                                alt="Ironman Profile Photo"
+                                width="50px"
+                            />
+                            <div class="trending-user">
+                                <h4>@goldtitaniumalloyman</h4>
+                                <p>Hulk Buster Project</p>
+                            </div>
                         </div>
                         <div class="trending">
-                            <h4>@captainmurica</h4>
-                            <p>Super Soldier Project</p>
+                            <img
+                                src="./assets/img/captain-icon.jpg"
+                                alt="Captain America Profile Photo"
+                                width="50px"
+                            />
+                            <div class="trending-user">
+                                <h4>@captainmurica</h4>
+                                <p>Super Soldier Project</p>
+                            </div>
                         </div>
                     </div>
                 </div>
