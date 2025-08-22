@@ -28,52 +28,74 @@
                 </div>
                 <div class="main-links-container">
                     <ul class="main-links">
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-house"></i>Home</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""><i class="fa-solid fa-house" aria-hidden="true"></i>Home</a>
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-user"></i>Profile</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-user" aria-hidden="true"></i>Profile</a
+                            >
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-message"></i>Messages</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-message" aria-hidden="true"></i>Messages</a
+                            >
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i
+                                >History</a
+                            >
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-list-check"></i>Tasks</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-list-check" aria-hidden="true"></i>Tasks</a
+                            >
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-people-group"></i>Communities</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-people-group" aria-hidden="true"></i
+                                >Communities</a
+                            >
                         </li>
                     </ul>
                 </div>
                 <div class="secondary-links-container">
                     <ul class="secondary-links">
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-gear" aria-hidden="true"></i>Settings</a
+                            >
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-circle-question"></i>Support</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-circle-question" aria-hidden="true"></i
+                                >Support</a
+                            >
                         </li>
-                        <li class="sidebar-link">
-                            <a href=""><i class="fa-solid fa-shield-halved"></i>Privacy</a>
+                        <li class="sidebar-link bubble-hover">
+                            <a href=""
+                                ><i class="fa-solid fa-shield-halved" aria-hidden="true"></i
+                                >Privacy</a
+                            >
                         </li>
                     </ul>
                 </div>
             </nav>
             <header class="header-container">
                 <div class="search-container">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                     <input type="search" name="search" id="search" />
                 </div>
                 <div class="alerts-container">
-                    <button><i class="fa-regular fa-bell"></i></button>
+                    <button class="bubble-hover">
+                        <i class="fa-regular fa-bell" aria-label="Alerts"></i>
+                    </button>
                 </div>
                 <div class="avatar-container">
                     <img
                         src="./assets/img/spiderman-icon.jpeg"
-                        alt="User Profile Picture"
+                        alt="Spiderman Profile Picture"
                         width="50px"
                     />
                     <span class="avatar-name">Peter Parker</span>
@@ -81,7 +103,7 @@
                 <div class="user-container">
                     <img
                         src="./assets/img/spiderman-icon.jpeg"
-                        alt="User Profile Photo"
+                        alt="Spiderman Profile Photo"
                         width="50px"
                     />
                     <div class="user-greeting-container">
@@ -90,74 +112,110 @@
                     </div>
                 </div>
                 <div class="header-buttons-container">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                    <button class="bubble-hover">New</button>
+                    <button class="bubble-hover">Upload</button>
+                    <button class="bubble-hover">Share</button>
                 </div>
             </header>
             <main class="content-container">
-                <div class="projects-container">
-                    <h3>Your Projects</h3>
+                <section class="projects-container">
+                    <h2 class="section-heading">Your Projects</h2>
                     <div class="project-cards-container">
-                        <div class="project-card card">
+                        <div class="project-card card bubble-hover">
                             <div class="project-info">
-                                <h4>Super Cool Project</h4>
+                                <h3 class="project-heading">Super Cool Project</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                                     at egestas enim. In hac habitasse platea dictumst.
                                 </p>
                             </div>
                             <div class="project-buttons">
-                                <button><i class="fa-regular fa-star"></i></button>
-                                <button><i class="fa-regular fa-eye"></i></button>
-                                <button><i class="fa-solid fa-code-fork"></i></button>
+                                <button class="bubble-hover">
+                                    <i
+                                        class="fa-regular fa-star"
+                                        aria-label="Favourite project"
+                                    ></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-regular fa-eye" aria-label="Watch project"></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-solid fa-code-fork" aria-label="Fork project"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-card card">
+                        <div class="project-card card bubble-hover">
                             <div class="project-info">
-                                <h4>Less Cool Project</h4>
+                                <h3 class="project-heading">Less Cool Project</h3>
                                 <p>
                                     Integer non massa sit amet eros tempus ultrices. Morbi sed elit
                                     dictum, faucibus quam id, rutrum est.
                                 </p>
                             </div>
                             <div class="project-buttons">
-                                <button><i class="fa-regular fa-star"></i></button>
-                                <button><i class="fa-regular fa-eye"></i></button>
-                                <button><i class="fa-solid fa-code-fork"></i></button>
+                                <button class="bubble-hover">
+                                    <i
+                                        class="fa-regular fa-star"
+                                        aria-label="Favourite project"
+                                    ></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-regular fa-eye" aria-label="Watch project"></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-solid fa-code-fork" aria-label="Fork project"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-card card">
+                        <div class="project-card card bubble-hover">
                             <div class="project-info">
-                                <h4>Impossible App</h4>
+                                <h3 class="project-heading">Impossible App</h3>
                                 <p>
                                     Curabitur nec rhoncus tortor, quis dictum neque. Etiam auctor
                                     neque consectetur quam elementum dignissim.
                                 </p>
                             </div>
                             <div class="project-buttons">
-                                <button><i class="fa-regular fa-star"></i></button>
-                                <button><i class="fa-regular fa-eye"></i></button>
-                                <button><i class="fa-solid fa-code-fork"></i></button>
+                                <button class="bubble-hover">
+                                    <i
+                                        class="fa-regular fa-star"
+                                        aria-label="Favourite project"
+                                    ></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-regular fa-eye" aria-label="Watch project"></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-solid fa-code-fork" aria-label="Fork project"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-card card">
+                        <div class="project-card card bubble-hover">
                             <div class="project-info">
-                                <h4>Easy Peasy App</h4>
+                                <h3 class="project-heading">Easy Peasy App</h3>
                                 <p>
                                     Fusce convallis quis nibh ut pharetra. Nam ultrices ipsum non
                                     nisl finibus, sed ullamcorper nulla ullamcorper.
                                 </p>
                             </div>
                             <div class="project-buttons">
-                                <button><i class="fa-regular fa-star"></i></button>
-                                <button><i class="fa-regular fa-eye"></i></button>
-                                <button><i class="fa-solid fa-code-fork"></i></button>
+                                <button class="bubble-hover">
+                                    <i
+                                        class="fa-regular fa-star"
+                                        aria-label="Favourite project"
+                                    ></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-regular fa-eye" aria-label="Watch project"></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-solid fa-code-fork" aria-label="Fork project"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-card card">
+                        <div class="project-card card bubble-hover">
                             <div class="project-info">
-                                <h4>Ad Blocker</h4>
+                                <h3 class="project-heading">Ad Blocker</h3>
                                 <p>
                                     Sed eget arcu vitae purus tincidunt ultrices vitae at mi.
                                     Curabitur maximus turpis ut molestie tempus. Pellentesque
@@ -166,102 +224,120 @@
                                 </p>
                             </div>
                             <div class="project-buttons">
-                                <button><i class="fa-regular fa-star"></i></button>
-                                <button><i class="fa-regular fa-eye"></i></button>
-                                <button><i class="fa-solid fa-code-fork"></i></button>
+                                <button class="bubble-hover">
+                                    <i
+                                        class="fa-regular fa-star"
+                                        aria-label="Favourite project"
+                                    ></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-regular fa-eye" aria-label="Watch project"></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-solid fa-code-fork" aria-label="Fork project"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-card card">
+                        <div class="project-card card bubble-hover">
                             <div class="project-info">
-                                <h4>Money Maker</h4>
+                                <h3 class="project-heading">Money Maker</h3>
                                 <p>
                                     Vestibulum hendrerit consectetur lacus. Mauris elit mauris,
                                     tincidunt sed lorem id, mollis condimentum dui.
                                 </p>
                             </div>
                             <div class="project-buttons">
-                                <button><i class="fa-regular fa-star"></i></button>
-                                <button><i class="fa-regular fa-eye"></i></button>
-                                <button><i class="fa-solid fa-code-fork"></i></button>
+                                <button class="bubble-hover">
+                                    <i
+                                        class="fa-regular fa-star"
+                                        aria-label="Favourite project"
+                                    ></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-regular fa-eye" aria-label="Watch project"></i>
+                                </button>
+                                <button class="bubble-hover">
+                                    <i class="fa-solid fa-code-fork" aria-label="Fork project"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="announcements-container">
-                    <h3>Announcements</h3>
+                </section>
+                <section class="announcements-container">
+                    <h2 class="section-heading">Announcements</h2>
                     <div class="announcements-card card">
-                        <div class="announcement">
-                            <h4>Site Maintenance</h4>
+                        <a href="" class="announcement bubble-hover">
+                            <h3 class="announcement-heading">Site Maintenance</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                                 consequat velit id.
                             </p>
-                        </div>
-                        <div class="announcement">
-                            <h4>Community Share Day</h4>
+                        </a>
+                        <a href="" class="announcement bubble-hover">
+                            <h3 class="announcement-heading">Community Share Day</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
                                 mi tincidunt.
                             </p>
-                        </div>
-                        <div class="announcement">
-                            <h4>Updated Privacy Policy</h4>
+                        </a>
+                        <a href="" class="announcement bubble-hover">
+                            <h3 class="announcement-heading">Updated Privacy Policy</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci
                                 mi, lobortis.
                             </p>
-                        </div>
+                        </a>
                     </div>
-                </div>
-                <div class="trending-container">
-                    <h3>Trending</h3>
+                </section>
+                <section class="trending-container">
+                    <h2 class="section-heading">Trending</h2>
                     <div class="trending-card card">
-                        <div class="trending">
+                        <a href="" class="trending bubble-hover">
                             <img
                                 src="./assets/img/antman-icon.jpg"
                                 alt="Antman Profile Photo"
                                 width="50px"
                             />
                             <div class="trending-user">
-                                <h4>@antguy</h4>
+                                <h3 class="trending-user-name">@antguy</h3>
                                 <p>Shrinking Project</p>
                             </div>
-                        </div>
-                        <div class="trending">
+                        </a>
+                        <a href="" class="trending bubble-hover">
                             <img
                                 src="./assets/img/spiderman-icon.jpeg"
                                 alt="Spiderman Profile Photo"
                                 width="50px"
                             />
                             <div class="trending-user">
-                                <h4>@spideyboi</h4>
+                                <h3 class="trending-user-name">@spideyboi</h3>
                                 <p>Super Cool Project</p>
                             </div>
-                        </div>
-                        <div class="trending">
+                        </a>
+                        <a href="" class="trending bubble-hover">
                             <img
                                 src="./assets/img/ironman-icon.jpg"
                                 alt="Ironman Profile Photo"
                                 width="50px"
                             />
                             <div class="trending-user">
-                                <h4>@goldtitaniumalloyman</h4>
+                                <h3 class="trending-user-name">@goldtitaniumalloyman</h3>
                                 <p>Hulk Buster Project</p>
                             </div>
-                        </div>
-                        <div class="trending">
+                        </a>
+                        <a href="" class="trending bubble-hover">
                             <img
                                 src="./assets/img/captain-icon.jpg"
                                 alt="Captain America Profile Photo"
                                 width="50px"
                             />
                             <div class="trending-user">
-                                <h4>@captainmurica</h4>
+                                <h3 class="trending-user-name">@captainmurica</h3>
                                 <p>Super Soldier Project</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
     </body>
