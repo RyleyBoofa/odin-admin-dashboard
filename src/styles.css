@@ -70,9 +70,16 @@ button[class="bubble-hover"]:hover {
     transform: scale(1.1);
 }
 
-li:has(a):hover {
+li:hover a {
     text-decoration: underline;
     transform: scale(1.05);
+}
+
+.avatar-img {
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* SIDEBAR */
@@ -180,13 +187,6 @@ li:has(a):hover {
     gap: 1em;
 }
 
-.avatar-container img {
-    width: 2em;
-    height: 2em;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 .user-container {
     font-size: var(--font-small);
     font-weight: bold;
@@ -200,11 +200,9 @@ li:has(a):hover {
     font-size: var(--font-large);
 }
 
-.user-container img {
+.user-container .avatar-img {
     width: 5em;
     height: 5em;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .header-buttons-container {
@@ -316,11 +314,4 @@ li:has(a):hover {
     display: flex;
     align-items: center;
     gap: 1em;
-}
-
-.trending img {
-    width: 2em;
-    height: 2em;
-    object-fit: cover;
-    border-radius: 50%;
 }
